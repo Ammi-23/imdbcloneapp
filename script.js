@@ -1,4 +1,4 @@
-//OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=7f618ea5
+//OMDb API: https://www.omdbapi.com/?i=tt3896198&apikey=7f618ea5
 //key: 7f618ea5
 
 //access the element and store in the variable
@@ -9,7 +9,7 @@ let movieList=[];
      
 // fetch the list of data/movies from OMDb API as per the input in search tab
 async function getMovieData (movieName) {
-    const resp = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=7f618ea5&s=${movieName}`)
+    const resp = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=7f618ea5&s=${movieName}`)
     const data = await resp.json() // to change to the JSON object
     return data.Search
 }
@@ -55,7 +55,7 @@ async function addToFav(e){
     //when clicked on heart icon the movie id is store in the variable
     const target=e.target.id;
     //fetch the movie detail by Id
-    const resp = await fetch(`http://www.omdbapi.com/?i=${target}&apikey=7f618ea5`)
+    const resp = await fetch(`https://www.omdbapi.com/?i=${target}&apikey=7f618ea5`)
     const data = await resp.json()
     const movieList=JSON.parse(localStorage.getItem("movielist"))||[];
     //to check if movie is already added to favourite list

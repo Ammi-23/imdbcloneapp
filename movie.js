@@ -6,7 +6,7 @@ function movieDetail() {
     fetchMovies(search);
     // function to fetch the movie detail by id and display
     async function fetchMovies(id) {
-        const resp = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=7f618ea5&type=movie`)
+        const resp = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=7f618ea5&type=movie`)
         const data = await resp.json()
         //display of the movie detail in main container
         container.innerHTML=`
