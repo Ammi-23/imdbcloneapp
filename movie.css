@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #0e0d0d;
+}
+/*for logo properties*/
+.logo-div{
+    height: 15vh;
+    width: 20vw;
+    position: relative;
+
+}
+/* main container styling*/
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+}
+#title{
+    color: darkred;
+    font-size: 2rem;
+}
+/* movie div properties*/
+.movie-div {
+    border: 0;
+    height: 65vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: #373631;;
+    box-shadow: 0 0 0.7rem rgb(165 169 156);
+    outline: 2px solid rgb(105 97 97 / 60%);
+}
+
+.movie-card{
+    height: 100%;
+    width: 80%;
+}
+#poster {
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;  
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.description-div{
+    width: -webkit-fill-available;
+}
+.detail{
+    height: 80%;
+    width: 95%;
+    position: relative;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: -webkit-fill-available;
+}
+.card-title{
+    font-size: 1.4rem;
+    color: #afa971;
+}
+
+
+.card-text {
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    color:rgb(114, 86, 52);
+}
+  
+.info-type {
+    color: #b73333;
+    font-size: 1rem;
+    font-weight: 600;
+}
+  
+.information {
+    font-weight: 500;
+    font-size: 0.9em;
+    
+}
+
+ /* Responsiveness */
+@media screen and (max-width: 767px) {
+    #poster {
+      margin-top: 1rem;
+      border-radius: 5px;
+    }
+}
+  
+@media screen and (max-width: 576px) {
+    #title {
+        font-size: large;
+        height: 45px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+  
+}
